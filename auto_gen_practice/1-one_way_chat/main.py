@@ -6,7 +6,7 @@ def main():
     config_list = autogen.config_list_from_json(
         env_or_file="config_list.json", 
         filter_dict={
-        "model": ["gemini-1.0-pro"],
+        "model": ["gemini-1.5-pro"],
         },
     )
 
@@ -27,9 +27,10 @@ def main():
         }
     )
 
-    user_proxy.initiate_chat(assistant, message="write a english poem in python")
+    user_proxy.initiate_chat(assistant, message="write a pytorch code for hello world")
 
 
 
 if __name__ == "__main__": 
     main()
+    # to do the custom model: https://www.youtube.com/watch?v=H0h78EBzz0o
